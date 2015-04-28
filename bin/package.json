@@ -42,10 +42,13 @@
 		"xcas": "0.1.0",
 		"weinre": "2.0.0-pre-I0Z7U9OV",
 		"ua-parser": "0.3.3",
-		"supervisor": "",
-		"body-parser": "",
-		"multer": "",
-		"fsmonitor": ""
+		"supervisor": "*",
+		"body-parser": "*",
+		"multer": "*",
+		"fsmonitor": "*",
+		"sequelize": "*",
+		"sequelize-auto": "*",
+		"sequelize-import": "*"
   },
   "devDependencies": {},
   "scripts": {
