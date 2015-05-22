@@ -1,214 +1,357 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
-1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli [ 'C:\\omneedia\\bin\\node.exe',
+1 verbose cli   'C:\\omneedia\\bin\\npm\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'sequelize' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.33
-4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 warn package.json bin.omneedia.framework@0.6.1 No repository field.
-6 warn package.json bin.omneedia.framework@0.6.1 No README data
+1 verbose cli   'sync' ]
+2 info using npm@1.4.9
+3 info using node@v1.6.4
+4 warn package.json bin.omneedia.framework@0.6.1 No repository field.
+5 warn package.json bin.omneedia.framework@0.6.1 No README data
+6 warn package.json sqwish@0.2.2 No repository field.
 7 warn package.json xcas@0.1.0 No repository field.
-8 warn package.json sqwish@0.2.2 No repository field.
-9 verbose readDependencies using package.json deps
-10 verbose cache add [ 'sequelize', null ]
-11 verbose cache add name=undefined spec="sequelize" args=["sequelize",null]
-12 verbose parsed url { protocol: null,
-12 verbose parsed url   slashes: null,
-12 verbose parsed url   auth: null,
-12 verbose parsed url   host: null,
-12 verbose parsed url   port: null,
-12 verbose parsed url   hostname: null,
-12 verbose parsed url   hash: null,
-12 verbose parsed url   search: null,
-12 verbose parsed url   query: null,
-12 verbose parsed url   pathname: 'sequelize',
-12 verbose parsed url   path: 'sequelize',
-12 verbose parsed url   href: 'sequelize' }
-13 silly lockFile 35595a70-sequelize sequelize
-14 verbose lock sequelize C:\Users\steph_000\Desktop\omneedia\bin\.appdata\npm-cache\35595a70-sequelize.lock
-15 silly lockFile 35595a70-sequelize sequelize
-16 silly lockFile 35595a70-sequelize sequelize
-17 verbose addNamed [ 'sequelize', '' ]
-18 verbose addNamed [ null, '*' ]
-19 silly lockFile 57143dcb-sequelize sequelize@
-20 verbose lock sequelize@ C:\Users\steph_000\Desktop\omneedia\bin\.appdata\npm-cache\57143dcb-sequelize.lock
-21 silly addNameRange { name: 'sequelize', range: '*', hasData: false }
-22 verbose request where is /sequelize
-23 verbose request registry http://registry.npmjs.org/
-24 verbose request id 8b9c817bbd0f3b09
-25 verbose url raw /sequelize
-26 verbose url resolving [ 'http://registry.npmjs.org/', './sequelize' ]
-27 verbose url resolved http://registry.npmjs.org/sequelize
-28 verbose request where is http://registry.npmjs.org/sequelize
-29 info trying registry request attempt 1 at 09:01:43
-30 verbose etag "8Z29EUDYNLM4HHWINWBIL4EOJ"
-31 http GET http://registry.npmjs.org/sequelize
-32 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
-33 info trying registry request attempt 2 at 09:02:14
-34 verbose etag "8Z29EUDYNLM4HHWINWBIL4EOJ"
-35 http GET http://registry.npmjs.org/sequelize
-36 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
-37 info trying registry request attempt 3 at 09:03:35
-38 verbose etag "8Z29EUDYNLM4HHWINWBIL4EOJ"
-39 http GET http://registry.npmjs.org/sequelize
-40 silly registry.get cb [ 304, undefined ]
-41 verbose etag http://registry.npmjs.org/sequelize from cache
-42 silly addNameRange number 2 { name: 'sequelize', range: '*', hasData: true }
-43 silly addNameRange versions [ 'sequelize',
-43 silly addNameRange   [ '0.2.2',
-43 silly addNameRange     '0.2.3',
-43 silly addNameRange     '0.2.4',
-43 silly addNameRange     '0.2.5',
-43 silly addNameRange     '0.2.6',
-43 silly addNameRange     '0.3.0',
-43 silly addNameRange     '0.4.0',
-43 silly addNameRange     '0.4.1',
-43 silly addNameRange     '0.4.2',
-43 silly addNameRange     '0.4.3',
-43 silly addNameRange     '1.0.0',
-43 silly addNameRange     '1.0.1',
-43 silly addNameRange     '1.0.2',
-43 silly addNameRange     '1.1.0',
-43 silly addNameRange     '1.1.1',
-43 silly addNameRange     '1.1.2',
-43 silly addNameRange     '1.1.3',
-43 silly addNameRange     '1.1.4',
-43 silly addNameRange     '1.2.0',
-43 silly addNameRange     '1.2.1',
-43 silly addNameRange     '1.3.0',
-43 silly addNameRange     '1.3.1',
-43 silly addNameRange     '1.3.2',
-43 silly addNameRange     '1.3.3',
-43 silly addNameRange     '1.3.4',
-43 silly addNameRange     '1.3.5',
-43 silly addNameRange     '1.3.6',
-43 silly addNameRange     '1.3.7',
-43 silly addNameRange     '1.4.0',
-43 silly addNameRange     '1.4.1',
-43 silly addNameRange     '1.5.0-alpha',
-43 silly addNameRange     '1.5.0-beta',
-43 silly addNameRange     '1.5.0-beta-2',
-43 silly addNameRange     '1.5.0',
-43 silly addNameRange     '1.6.0-alpha-1',
-43 silly addNameRange     '1.6.0-alpha-2',
-43 silly addNameRange     '1.6.0-alpha-3',
-43 silly addNameRange     '1.6.0-beta-1',
-43 silly addNameRange     '1.6.0-beta-2',
-43 silly addNameRange     '1.6.0-beta-3',
-43 silly addNameRange     '1.6.0-beta4',
-43 silly addNameRange     '1.6.0',
-43 silly addNameRange     '1.7.0-alpha1',
-43 silly addNameRange     '1.7.0-alpha2',
-43 silly addNameRange     '2.0.0-alpha1',
-43 silly addNameRange     '2.0.0-alpha2',
-43 silly addNameRange     '1.7.0-alpha3',
-43 silly addNameRange     '2.0.0-alpha3',
-43 silly addNameRange     '1.7.0-beta.0',
-43 silly addNameRange     '2.0.0-beta.0',
-43 silly addNameRange     '1.7.0-beta.1',
-43 silly addNameRange     '2.0.0-beta.1',
-43 silly addNameRange     '1.7.0-beta.2',
-43 silly addNameRange     '2.0.0-beta.2',
-43 silly addNameRange     '1.7.0-beta.3b',
-43 silly addNameRange     '2.0.0-beta.3',
-43 silly addNameRange     '1.7.0-beta.4a',
-43 silly addNameRange     '2.0.0-beta.4',
-43 silly addNameRange     '1.7.0-beta.5',
-43 silly addNameRange     '2.0.0-beta.5',
-43 silly addNameRange     '1.7.0-beta6',
-43 silly addNameRange     '2.0.0-beta.6',
-43 silly addNameRange     '1.7.0-beta7',
-43 silly addNameRange     '2.0.0-beta.7',
-43 silly addNameRange     '2.0.0-beta.8',
-43 silly addNameRange     '1.7.0-beta8',
-43 silly addNameRange     '1.7.0-rc1',
-43 silly addNameRange     '2.0.0-dev1',
-43 silly addNameRange     '1.7.0-rc2',
-43 silly addNameRange     '2.0.0-dev2',
-43 silly addNameRange     '1.7.0-rc3',
-43 silly addNameRange     '2.0.0-dev3',
-43 silly addNameRange     '1.7.0-rc4',
-43 silly addNameRange     '2.0.0-dev4',
-43 silly addNameRange     '2.0.0-dev5',
-43 silly addNameRange     '1.7.0-rc5',
-43 silly addNameRange     '1.7.0-rc6',
-43 silly addNameRange     '2.0.0-dev6',
-43 silly addNameRange     '2.0.0-dev7',
-43 silly addNameRange     '1.7.0-rc7',
-43 silly addNameRange     '2.0.0-dev8',
-43 silly addNameRange     '1.7.0-rc8',
-43 silly addNameRange     '1.7.0-rc9',
-43 silly addNameRange     '2.0.0-dev9',
-43 silly addNameRange     '2.0.0-dev10',
-43 silly addNameRange     '1.7.0',
-43 silly addNameRange     '1.7.1',
-43 silly addNameRange     '1.7.2',
-43 silly addNameRange     '1.7.3',
-43 silly addNameRange     '2.0.0-dev11',
-43 silly addNameRange     '1.7.4',
-43 silly addNameRange     '1.7.5',
-43 silly addNameRange     '1.7.7',
-43 silly addNameRange     '1.7.8',
-43 silly addNameRange     '1.7.9',
-43 silly addNameRange     '2.0.0-dev12',
-43 silly addNameRange     '1.7.10',
-43 silly addNameRange     '2.0.0-dev13',
-43 silly addNameRange     '2.0.0-rc1',
-43 silly addNameRange     '2.0.0-rc2',
-43 silly addNameRange     '2.0.0-rc3',
-43 silly addNameRange     '2.0.0-rc4',
-43 silly addNameRange     '2.0.0-rc5',
-43 silly addNameRange     '2.0.0-rc6',
-43 silly addNameRange     '2.0.0-rc7',
-43 silly addNameRange     '2.0.0-rc8',
-43 silly addNameRange     '2.0.0',
-43 silly addNameRange     '2.0.1',
-43 silly addNameRange     '2.0.2',
-43 silly addNameRange     '2.0.3',
-43 silly addNameRange     '2.0.4',
-43 silly addNameRange     '2.0.5' ] ]
-44 verbose addNamed [ 'sequelize', '2.0.5' ]
-45 verbose addNamed [ '2.0.5', '2.0.5' ]
-46 silly lockFile cc5a5ac4-sequelize-2-0-5 sequelize@2.0.5
-47 verbose lock sequelize@2.0.5 C:\Users\steph_000\Desktop\omneedia\bin\.appdata\npm-cache\cc5a5ac4-sequelize-2-0-5.lock
-48 silly lockFile 4be3f7b3-rg-sequelize-sequelize-2-0-5-tgz http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-49 verbose lock http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz C:\Users\steph_000\Desktop\omneedia\bin\.appdata\npm-cache\4be3f7b3-rg-sequelize-sequelize-2-0-5-tgz.lock
-50 verbose addRemoteTarball [ 'http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz',
-50 verbose addRemoteTarball   '9e985705b69550ee99af979cc63d9f235abc707a' ]
-51 info retry fetch attempt 1 at 09:03:56
-52 verbose fetch to= C:\Users\STEPH_~1\AppData\Local\Temp\npm-7120-mNsnXXhM\registry.npmjs.org\sequelize\-\sequelize-2.0.5.tgz
-53 http GET http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-54 error fetch failed http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-55 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
-56 info retry fetch attempt 2 at 09:04:27
-57 verbose fetch to= C:\Users\STEPH_~1\AppData\Local\Temp\npm-7120-mNsnXXhM\registry.npmjs.org\sequelize\-\sequelize-2.0.5.tgz
-58 http GET http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-59 error fetch failed http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-60 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
-61 info retry fetch attempt 3 at 09:05:49
-62 verbose fetch to= C:\Users\STEPH_~1\AppData\Local\Temp\npm-7120-mNsnXXhM\registry.npmjs.org\sequelize\-\sequelize-2.0.5.tgz
-63 http GET http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-64 error fetch failed http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-65 silly lockFile 4be3f7b3-rg-sequelize-sequelize-2-0-5-tgz http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-66 silly lockFile 4be3f7b3-rg-sequelize-sequelize-2-0-5-tgz http://registry.npmjs.org/sequelize/-/sequelize-2.0.5.tgz
-67 silly lockFile cc5a5ac4-sequelize-2-0-5 sequelize@2.0.5
-68 silly lockFile cc5a5ac4-sequelize-2-0-5 sequelize@2.0.5
-69 silly lockFile 57143dcb-sequelize sequelize@
-70 silly lockFile 57143dcb-sequelize sequelize@
-71 error network connect ETIMEDOUT
-71 error network This is most likely not a problem with npm itself
-71 error network and is related to network connectivity.
-71 error network In most cases you are behind a proxy or have bad network settings.
-71 error network
-71 error network If you are behind a proxy, please make sure that the
-71 error network 'proxy' config is set properly.  See: 'npm help config'
-72 error System Windows_NT 6.2.9200
-73 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "sequelize"
-74 error cwd C:\Users\steph_000\Desktop\omneedia\bin
-75 error node -v v0.10.33
-76 error npm -v 1.4.28
-77 error syscall connect
-78 error code ETIMEDOUT
-79 error errno ETIMEDOUT
-80 verbose exit [ 1, true ]
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'sync@0.2.3', null ]
+10 verbose cache add name=undefined spec="sync@0.2.3" args=["sync@0.2.3",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'sync@0.2.3',
+11 verbose parsed url   path: 'sync@0.2.3',
+11 verbose parsed url   href: 'sync@0.2.3' }
+12 verbose cache add name="sync" spec="0.2.3" args=["sync","0.2.3"]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '0.2.3',
+13 verbose parsed url   path: '0.2.3',
+13 verbose parsed url   href: '0.2.3' }
+14 verbose addNamed [ 'sync', '0.2.3' ]
+15 verbose addNamed [ '0.2.3', '0.2.3' ]
+16 silly lockFile 1a00b8b2-sync-0-2-3 sync@0.2.3
+17 verbose lock sync@0.2.3 C:\omneedia\bin\.appdata\npm-cache\1a00b8b2-sync-0-2-3.lock
+18 verbose url raw sync
+19 verbose url resolving [ 'http://registry.npmjs.org/', './sync' ]
+20 verbose url resolved http://registry.npmjs.org/sync
+21 info trying registry request attempt 1 at 17:38:16
+22 verbose etag "53HNGV2MQWD7G71ZBCHZ3UF89"
+23 http GET http://registry.npmjs.org/sync
+24 http 304 http://registry.npmjs.org/sync
+25 silly registry.get cb [ 304,
+25 silly registry.get   { date: 'Fri, 15 May 2015 15:38:13 GMT',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     'cache-control': 'max-age=60',
+25 silly registry.get     etag: '"53HNGV2MQWD7G71ZBCHZ3UF89"',
+25 silly registry.get     age: '0',
+25 silly registry.get     connection: 'close',
+25 silly registry.get     'x-served-by': 'cache-ams4149-AMS',
+25 silly registry.get     'x-cache': 'MISS',
+25 silly registry.get     'x-cache-hits': '0',
+25 silly registry.get     'x-timer': 'S1431704293.145436,VS0,VE385',
+25 silly registry.get     vary: 'Accept' } ]
+26 verbose etag sync from cache
+27 silly lockFile 1a00b8b2-sync-0-2-3 sync@0.2.3
+28 silly lockFile 1a00b8b2-sync-0-2-3 sync@0.2.3
+29 silly resolved [ { name: 'sync',
+29 silly resolved     description: 'Library that makes simple to run asynchronous functions in synchronous manner, using node-fibers.',
+29 silly resolved     version: '0.2.3',
+29 silly resolved     url: 'http://github.com/0ctave/node-sync',
+29 silly resolved     author: { name: 'Yuriy Bogdanov', email: 'chinsay@gmail.com' },
+29 silly resolved     main: 'lib/sync',
+29 silly resolved     license: 'MIT',
+29 silly resolved     repository:
+29 silly resolved      { type: 'git',
+29 silly resolved        url: 'https://github.com/ybogdanov/node-sync.git' },
+29 silly resolved     engines: { node: '>=0.5.2' },
+29 silly resolved     dependencies: { fibers: '>=0.6' },
+29 silly resolved     readme: '# Introduction\nnode-sync is a simple library that allows you to call any asynchronous function in synchronous way. The main benefit is that it uses javascript-native design - Function.prototype.sync function, instead of heavy APIs which you\'ll need to learn. Also, asynchronous function which was called synchronously through node-sync doesn\'t blocks the whole process - it blocks only current thread!\n\nIt built on [node-fibers](https://github.com/laverdet/node-fibers) library as a multithreading solution.\n\n# Examples\nSimply call asynchronous function synchronously:\n\n```javascript\nvar Sync = require(\'sync\');\n\nfunction asyncFunction(a, b, callback) {\n\tprocess.nextTick(function(){\n\t\tcallback(null, a + b);\n\t})\n}\n\n// Run in a fiber\nSync(function(){\n\t\n\t// Function.prototype.sync() interface is same as Function.prototype.call() - first argument is \'this\' context\n\tvar result = asyncFunction.sync(null, 2, 3);\n\tconsole.log(result); // 5\n\n\t// Read file synchronously without blocking whole process? no problem\n\tvar source = require(\'fs\').readFile.sync(null, __filename);\n    console.log(String(source)); // prints the source of this example itself\n})\n```\n\nIt throws exceptions!\n\n```javascript\nvar Sync = require(\'sync\');\n\nfunction asyncFunction(a, b, callback) {\n\tprocess.nextTick(function(){\n\t\tcallback(\'something went wrong\');\n\t})\n}\n\n// Run in a fiber\nSync(function(){\n\n\ttry {\n\t\tvar result = asyncFunction.sync(null, 2, 3);\n\t}\n\tcatch (e) {\n\t\tconsole.error(e); // something went wrong\n\t}\n})\n\n// Or simply specify callback function for Sync fiber\n// handy when you use Sync in asynchronous environment\nSync(function(){\n\t\n\t// The result will be passed to a Sync callback\n\tvar result = asyncFunction.sync(null, 2, 3);\n\treturn result;\n\t\n}, function(err, result){ // <-- standard callback\n\t\n\tif (err) console.error(err); // something went wrong\n\t\n\t// The result which was returned from Sync body function\n\tconsole.log(result);\n})\n```\n\nTransparent integration\n\n```javascript\nvar Sync = require(\'sync\');\n\nvar MyNewFunctionThatUsesFibers = function(a, b) { // <-- no callback here\n\t\n\t// we can use yield here\n\t// yield();\n\t\n\t// or throw an exception!\n\t// throw new Error(\'something went wrong\');\n\t\n\t// or even sleep\n\t// Sync.sleep(200);\n\t\n\t// or turn fs.readFile to non-blocking synchronous function\n\t// var source = require(\'fs\').readFile.sync(null, __filename)\n\t\n\treturn a + b; // just return a value\n\t\n}.async() // <-- here we make this function friendly with async environment\n\n// Classic asynchronous nodejs environment\nvar MyOldFashoinAppFunction = function() {\n\t\n\t// We just use our MyNewFunctionThatUsesFibers normally, in a callback-driven way\n\tMyNewFunctionThatUsesFibers(2, 3, function(err, result){\n\t\t\n\t\t// If MyNewFunctionThatUsesFibers will throw an exception, it will go here\n\t\tif (err) return console.error(err);\n\t\t\n\t\t// \'return\' value of MyNewFunctionThatUsesFibers\n\t\tconsole.log(result); // 5\n\t})\n}\n\n// From fiber environment\nSync(function(){\n\t\n\t// Run MyNewFunctionThatUsesFibers synchronously\n\tvar result = MyNewFunctionThatUsesFibers(2, 3);\n\tconsole.log(result); // 5\n\t\n\t// Or use sync() for it (same behavior)\n\tvar result = MyNewFunctionThatUsesFibers.sync(null, 2, 3);\n\tconsole.log(result); // 5\n})\n```\n\nParallel execution:\n\n```javascript\nvar Sync = require(\'sync\'),\n\tFuture = Sync.Future();\n\n// Run in a fiber\nSync(function(){\n\ttry {\n\t\t// Three function calls in parallel\n\t\tvar foo = asyncFunction.future(null, 2, 3);\n\t\tvar bar = asyncFunction.future(null, 5, 5);\n\t\tvar baz = asyncFunction.future(null, 10, 10);\n\t\n\t\t// We are immediately here, no blocking\n\t\n\t\t// foo, bar, baz - our tickets to the future!\n\t    console.log(foo); // { [Function: Future] result: [Getter], error: [Getter] }\n\t\n\t\t// Get the results\n\t\t// (when you touch \'result\' getter, it blocks until result would be returned)\n\t\tconsole.log(foo.result, bar.result, baz.result); // 5 10 20\n\t\n\t\t// Or you can straightly use Sync.Future without wrapper\n\t\t// This call doesn\'t blocks\n\t\tasyncFunction(2, 3, foo = Future());\n\t\n\t\t// foo is a ticket\n\t    console.log(foo); // { [Function: Future] result: [Getter], error: [Getter] }\n\n\t\t// Wait for the result\n\t\tconsole.log(foo.result); // 5\n\t}\n\tcatch (e) {\n\t\t// If some of async functions returned an error to a callback\n\t\t// it will be thrown as exception\n\t\tconsole.error(e);\n\t}\n})\n```\n\t\nTimeouts support\n\n```javascript\t\nvar Sync = require(\'sync\'),\n\tFuture = Sync.Future;\n\nfunction asyncFunction(a, b, callback) {\n\tsetTimeout(function(){\n\t\tcallback(null, a + b);\n\t}, 1000)\n}\n\n// Run in a fiber\nSync(function(){\n\t\n\t// asyncFunction returns the result after 1000 ms\n\tvar foo = asyncFunction.future(null, 2, 3);\n\t// but we can wait only 500ms!\n\tfoo.timeout = 500;\n\n\ttry {\n\t    var result = foo.result;\n\t}\n\tcatch (e) {\n\t    console.error(e); // Future function timed out at 500 ms\n\t}\n\n\t// Same example with straight future function\n\tasyncFunction(2, 3, foo = new Future(500));\n\n\ttry {\n\t    var result = foo.result;\n\t}\n\tcatch (e) {\n\t    console.error(e); // Future function timed out at 500 ms\n\t}\n})\n```\n\t\nSee more examples in [examples](https://github.com/0ctave/node-sync/tree/master/examples) directory.\n\n# Installation\ninstall\n\n```bash\n$ npm install sync\n```\nand then\n\n```bash\n$ node your_file_using_sync.js\n```\n',
+29 silly resolved     readmeFilename: 'README.md',
+29 silly resolved     bugs: { url: 'https://github.com/ybogdanov/node-sync/issues' },
+29 silly resolved     homepage: 'https://github.com/ybogdanov/node-sync',
+29 silly resolved     _id: 'sync@0.2.3',
+29 silly resolved     _shasum: '390bc9c718eb2e87e5cb26caa75de90c6e8e9bdc',
+29 silly resolved     _from: 'sync@0.2.3',
+29 silly resolved     _resolved: 'http://registry.npmjs.org/sync/-/sync-0.2.3.tgz' } ]
+30 info install sync@0.2.3 into C:\omneedia\bin
+31 info installOne sync@0.2.3
+32 info C:\omneedia\bin\node_modules\sync unbuild
+33 verbose tar unpack C:\omneedia\bin\.appdata\npm-cache\sync\0.2.3\package.tgz
+34 silly lockFile 7120a25c-C-omneedia-bin-node-modules-sync tar://C:\omneedia\bin\node_modules\sync
+35 verbose lock tar://C:\omneedia\bin\node_modules\sync C:\omneedia\bin\.appdata\npm-cache\7120a25c-C-omneedia-bin-node-modules-sync.lock
+36 silly lockFile c1ec31ed-npm-cache-sync-0-2-3-package-tgz tar://C:\omneedia\bin\.appdata\npm-cache\sync\0.2.3\package.tgz
+37 verbose lock tar://C:\omneedia\bin\.appdata\npm-cache\sync\0.2.3\package.tgz C:\omneedia\bin\.appdata\npm-cache\c1ec31ed-npm-cache-sync-0-2-3-package-tgz.lock
+38 silly gunzTarPerm modes [ '755', '644' ]
+39 silly gunzTarPerm extractEntry package.json
+40 silly gunzTarPerm extractEntry .npmignore
+41 silly gunzTarPerm extractEntry README.md
+42 silly gunzTarPerm extractEntry LICENSE
+43 silly gunzTarPerm extractEntry benchmarks/index.js
+44 silly gunzTarPerm extractEntry examples/async.js
+45 silly gunzTarPerm extractEntry examples/exceptions.js
+46 silly gunzTarPerm extractEntry examples/express.js
+47 silly gunzTarPerm extractEntry examples/fiber.js
+48 silly gunzTarPerm extractEntry examples/future.js
+49 silly gunzTarPerm extractEntry examples/blocking.js
+50 silly gunzTarPerm extractEntry examples/repl.js
+51 silly gunzTarPerm extractEntry examples/scope.js
+52 silly gunzTarPerm extractEntry examples/simple.js
+53 silly gunzTarPerm extractEntry examples/simple2.js
+54 silly gunzTarPerm extractEntry examples/vars.js
+55 silly gunzTarPerm extractEntry examples/object.js
+56 silly gunzTarPerm extractEntry lib/sync.js
+57 silly gunzTarPerm extractEntry test/async.js
+58 silly gunzTarPerm extractEntry test/fiber.js
+59 silly gunzTarPerm extractEntry test/future.js
+60 silly gunzTarPerm extractEntry test/index.js
+61 silly gunzTarPerm extractEntry test/sleep.js
+62 silly gunzTarPerm extractEntry test/sync.js
+63 silly lockFile 7120a25c-C-omneedia-bin-node-modules-sync tar://C:\omneedia\bin\node_modules\sync
+64 silly lockFile 7120a25c-C-omneedia-bin-node-modules-sync tar://C:\omneedia\bin\node_modules\sync
+65 silly lockFile c1ec31ed-npm-cache-sync-0-2-3-package-tgz tar://C:\omneedia\bin\.appdata\npm-cache\sync\0.2.3\package.tgz
+66 silly lockFile c1ec31ed-npm-cache-sync-0-2-3-package-tgz tar://C:\omneedia\bin\.appdata\npm-cache\sync\0.2.3\package.tgz
+67 info preinstall sync@0.2.3
+68 verbose readDependencies using package.json deps
+69 verbose readDependencies using package.json deps
+70 verbose cache add [ 'fibers@>=0.6', null ]
+71 verbose cache add name=undefined spec="fibers@>=0.6" args=["fibers@>=0.6",null]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: 'fibers@%3E=0.6',
+72 verbose parsed url   path: 'fibers@%3E=0.6',
+72 verbose parsed url   href: 'fibers@%3E=0.6' }
+73 verbose cache add name="fibers" spec=">=0.6" args=["fibers",">=0.6"]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: '%3E=0.6',
+74 verbose parsed url   path: '%3E=0.6',
+74 verbose parsed url   href: '%3E=0.6' }
+75 verbose addNamed [ 'fibers', '>=0.6' ]
+76 verbose addNamed [ null, '>=0.6.0-0' ]
+77 silly lockFile 40f23d42-fibers-0-6 fibers@>=0.6
+78 verbose lock fibers@>=0.6 C:\omneedia\bin\.appdata\npm-cache\40f23d42-fibers-0-6.lock
+79 silly addNameRange { name: 'fibers', range: '>=0.6.0-0', hasData: false }
+80 verbose url raw fibers
+81 verbose url resolving [ 'http://registry.npmjs.org/', './fibers' ]
+82 verbose url resolved http://registry.npmjs.org/fibers
+83 info trying registry request attempt 1 at 17:38:17
+84 verbose etag "EX31BL7C8SVJG9DJF4DCC7F5F"
+85 http GET http://registry.npmjs.org/fibers
+86 http 304 http://registry.npmjs.org/fibers
+87 silly registry.get cb [ 304,
+87 silly registry.get   { date: 'Fri, 15 May 2015 15:38:14 GMT',
+87 silly registry.get     via: '1.1 varnish',
+87 silly registry.get     'cache-control': 'max-age=60',
+87 silly registry.get     etag: '"EX31BL7C8SVJG9DJF4DCC7F5F"',
+87 silly registry.get     age: '0',
+87 silly registry.get     connection: 'close',
+87 silly registry.get     'x-served-by': 'cache-ams4134-AMS',
+87 silly registry.get     'x-cache': 'HIT',
+87 silly registry.get     'x-cache-hits': '1',
+87 silly registry.get     'x-timer': 'S1431704294.014730,VS0,VE390',
+87 silly registry.get     vary: 'Accept' } ]
+88 verbose etag fibers from cache
+89 silly addNameRange number 2 { name: 'fibers', range: '>=0.6.0-0', hasData: true }
+90 silly addNameRange versions [ 'fibers',
+90 silly addNameRange   [ '0.1.0',
+90 silly addNameRange     '0.1.1',
+90 silly addNameRange     '0.1.2',
+90 silly addNameRange     '0.1.3',
+90 silly addNameRange     '0.1.4',
+90 silly addNameRange     '0.1.6',
+90 silly addNameRange     '0.1.7',
+90 silly addNameRange     '0.1.8',
+90 silly addNameRange     '0.2.0',
+90 silly addNameRange     '0.2.1',
+90 silly addNameRange     '0.2.2',
+90 silly addNameRange     '0.2.3',
+90 silly addNameRange     '0.2.4',
+90 silly addNameRange     '0.2.5',
+90 silly addNameRange     '0.2.6',
+90 silly addNameRange     '0.5.0',
+90 silly addNameRange     '0.6.0',
+90 silly addNameRange     '0.5.1',
+90 silly addNameRange     '0.6.1',
+90 silly addNameRange     '0.6.2',
+90 silly addNameRange     '0.6.3',
+90 silly addNameRange     '0.6.4',
+90 silly addNameRange     '0.6.5',
+90 silly addNameRange     '0.6.6',
+90 silly addNameRange     '0.6.7',
+90 silly addNameRange     '0.6.8',
+90 silly addNameRange     '0.6.9',
+90 silly addNameRange     '1.0.0',
+90 silly addNameRange     '1.0.1',
+90 silly addNameRange     '1.0.2',
+90 silly addNameRange     '1.0.4',
+90 silly addNameRange     '1.0.5' ] ]
+91 verbose addNamed [ 'fibers', '1.0.5' ]
+92 verbose addNamed [ '1.0.5', '1.0.5' ]
+93 silly lockFile 1eddb9fb-fibers-1-0-5 fibers@1.0.5
+94 verbose lock fibers@1.0.5 C:\omneedia\bin\.appdata\npm-cache\1eddb9fb-fibers-1-0-5.lock
+95 silly lockFile 1eddb9fb-fibers-1-0-5 fibers@1.0.5
+96 silly lockFile 1eddb9fb-fibers-1-0-5 fibers@1.0.5
+97 silly lockFile 40f23d42-fibers-0-6 fibers@>=0.6
+98 silly lockFile 40f23d42-fibers-0-6 fibers@>=0.6
+99 silly resolved [ { name: 'fibers',
+99 silly resolved     version: '1.0.5',
+99 silly resolved     description: 'Cooperative multi-tasking for Javascript',
+99 silly resolved     keywords:
+99 silly resolved      [ 'fiber',
+99 silly resolved        'fibers',
+99 silly resolved        'coroutine',
+99 silly resolved        'thread',
+99 silly resolved        'async',
+99 silly resolved        'parallel',
+99 silly resolved        'worker',
+99 silly resolved        'future',
+99 silly resolved        'promise' ],
+99 silly resolved     homepage: 'https://github.com/laverdet/node-fibers',
+99 silly resolved     author:
+99 silly resolved      { name: 'Marcel Laverdet',
+99 silly resolved        email: 'marcel@laverdet.com',
+99 silly resolved        url: 'https://github.com/laverdet/' },
+99 silly resolved     main: 'fibers',
+99 silly resolved     scripts: { install: 'node ./build.js', test: 'node ./test.js' },
+99 silly resolved     repository:
+99 silly resolved      { type: 'git',
+99 silly resolved        url: 'git://github.com/laverdet/node-fibers.git' },
+99 silly resolved     engines: { node: '>=0.5.2' },
+99 silly resolved     gitHead: 'aff726a79af0c9d400ec0fa37be53f23643a4623',
+99 silly resolved     bugs: { url: 'https://github.com/laverdet/node-fibers/issues' },
+99 silly resolved     _id: 'fibers@1.0.5',
+99 silly resolved     _shasum: '3bea1f697d8540bb3904961ad50939bdee1df678',
+99 silly resolved     _from: 'fibers@>=0.6',
+99 silly resolved     _npmVersion: '1.4.28',
+99 silly resolved     _npmUser: { name: 'laverdet', email: 'marcel.npm@laverdet.com' },
+99 silly resolved     maintainers: [ [Object] ],
+99 silly resolved     dist:
+99 silly resolved      { shasum: '3bea1f697d8540bb3904961ad50939bdee1df678',
+99 silly resolved        tarball: 'http://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz' },
+99 silly resolved     directories: {},
+99 silly resolved     _resolved: 'http://registry.npmjs.org/fibers/-/fibers-1.0.5.tgz',
+99 silly resolved     readme: 'ERROR: No README data found!' } ]
+100 info install fibers@1.0.5 into C:\omneedia\bin\node_modules\sync
+101 info installOne fibers@1.0.5
+102 info C:\omneedia\bin\node_modules\sync\node_modules\fibers unbuild
+103 verbose tar unpack C:\omneedia\bin\.appdata\npm-cache\fibers\1.0.5\package.tgz
+104 silly lockFile 67f4a7b6-modules-sync-node-modules-fibers tar://C:\omneedia\bin\node_modules\sync\node_modules\fibers
+105 verbose lock tar://C:\omneedia\bin\node_modules\sync\node_modules\fibers C:\omneedia\bin\.appdata\npm-cache\67f4a7b6-modules-sync-node-modules-fibers.lock
+106 silly lockFile 84dc1a02-m-cache-fibers-1-0-5-package-tgz tar://C:\omneedia\bin\.appdata\npm-cache\fibers\1.0.5\package.tgz
+107 verbose lock tar://C:\omneedia\bin\.appdata\npm-cache\fibers\1.0.5\package.tgz C:\omneedia\bin\.appdata\npm-cache\84dc1a02-m-cache-fibers-1-0-5-package-tgz.lock
+108 silly gunzTarPerm modes [ '755', '644' ]
+109 silly gunzTarPerm extractEntry package.json
+110 silly gunzTarPerm extractEntry .npmignore
+111 silly gunzTarPerm extractEntry README.md
+112 silly gunzTarPerm extractEntry LICENSE
+113 silly gunzTarPerm extractEntry quick-test.js
+114 silly gunzTarPerm extractEntry future.js
+115 silly gunzTarPerm extractEntry build.js
+116 silly gunzTarPerm extractEntry test.js
+117 silly gunzTarPerm extractEntry fibers.js
+118 silly gunzTarPerm extractEntry binding.gyp
+119 silly gunzTarPerm extractEntry bin/.npmignore
+120 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-3.14/fibers.node
+121 silly gunzTarPerm extractEntry bin/darwin-x64-v8-3.14/fibers.node
+122 silly gunzTarPerm extractEntry bin/linux-ia32-v8-3.14/fibers.node
+123 silly gunzTarPerm extractEntry bin/linux-x64-v8-3.14/fibers.node
+124 silly gunzTarPerm extractEntry bin/win32-ia32-v8-3.14/fibers.node
+125 silly gunzTarPerm extractEntry bin/win32-x64-v8-3.14/fibers.node
+126 silly gunzTarPerm extractEntry src/coroutine.cc
+127 silly gunzTarPerm extractEntry src/coroutine.h
+128 silly gunzTarPerm extractEntry src/fibers.cc
+129 silly gunzTarPerm extractEntry src/libcoro/README
+130 silly gunzTarPerm extractEntry src/libcoro/LICENSE
+131 silly gunzTarPerm extractEntry src/libcoro/conftest.c
+132 silly gunzTarPerm extractEntry src/libcoro/coro.c
+133 silly gunzTarPerm extractEntry src/libcoro/coro.h
+134 silly gunzTarPerm extractEntry test/already-running.js
+135 silly gunzTarPerm extractEntry test/exit.js
+136 silly gunzTarPerm extractEntry test/fibonacci.js
+137 silly gunzTarPerm extractEntry test/finish-multiple.js
+138 silly gunzTarPerm extractEntry test/exec.js
+139 silly gunzTarPerm extractEntry test/future.js
+140 silly gunzTarPerm extractEntry test/illegal-yield.js
+141 silly gunzTarPerm extractEntry test/pool.js
+142 silly gunzTarPerm extractEntry test/process-title.js
+143 silly gunzTarPerm extractEntry test/stack-overflow.js
+144 silly gunzTarPerm extractEntry test/current.js
+145 silly gunzTarPerm extractEntry test/stack-overflow2.js
+146 silly gunzTarPerm extractEntry test/child-process.js
+147 silly gunzTarPerm extractEntry test/started.js
+148 silly gunzTarPerm extractEntry test/bad-context.js
+149 silly gunzTarPerm extractEntry test/unwind.js
+150 silly gunzTarPerm extractEntry test/future-exception.js
+151 silly lockFile 67f4a7b6-modules-sync-node-modules-fibers tar://C:\omneedia\bin\node_modules\sync\node_modules\fibers
+152 silly lockFile 67f4a7b6-modules-sync-node-modules-fibers tar://C:\omneedia\bin\node_modules\sync\node_modules\fibers
+153 silly lockFile 84dc1a02-m-cache-fibers-1-0-5-package-tgz tar://C:\omneedia\bin\.appdata\npm-cache\fibers\1.0.5\package.tgz
+154 silly lockFile 84dc1a02-m-cache-fibers-1-0-5-package-tgz tar://C:\omneedia\bin\.appdata\npm-cache\fibers\1.0.5\package.tgz
+155 info preinstall fibers@1.0.5
+156 verbose readDependencies using package.json deps
+157 verbose readDependencies using package.json deps
+158 silly resolved []
+159 verbose about to build C:\omneedia\bin\node_modules\sync\node_modules\fibers
+160 info build C:\omneedia\bin\node_modules\sync\node_modules\fibers
+161 verbose linkStuff [ false,
+161 verbose linkStuff   false,
+161 verbose linkStuff   false,
+161 verbose linkStuff   'C:\\omneedia\\bin\\node_modules\\sync\\node_modules' ]
+162 info linkStuff fibers@1.0.5
+163 verbose linkBins fibers@1.0.5
+164 verbose linkMans fibers@1.0.5
+165 verbose rebuildBundles fibers@1.0.5
+166 info install fibers@1.0.5
+167 verbose unsafe-perm in lifecycle true
+168 info fibers@1.0.5 Failed to exec install script
+169 info C:\omneedia\bin\node_modules\sync\node_modules\fibers unbuild
+170 info preuninstall fibers@1.0.5
+171 info uninstall fibers@1.0.5
+172 verbose false,C:\omneedia\bin\node_modules,C:\omneedia\bin\node_modules\sync\node_modules unbuild fibers@1.0.5
+173 info postuninstall fibers@1.0.5
+174 verbose about to build C:\omneedia\bin\node_modules\sync
+175 info C:\omneedia\bin\node_modules\sync unbuild
+176 info preuninstall sync@0.2.3
+177 info uninstall sync@0.2.3
+178 verbose true,C:\omneedia\bin\node_modules,C:\omneedia\bin\node_modules unbuild sync@0.2.3
+179 info postuninstall sync@0.2.3
+180 error fibers@1.0.5 install: `node ./build.js`
+180 error Exit status 1
+181 error Failed at the fibers@1.0.5 install script.
+181 error This is most likely a problem with the fibers package,
+181 error not with npm itself.
+181 error Tell the author that this fails on your system:
+181 error     node ./build.js
+181 error You can get their info via:
+181 error     npm owner ls fibers
+181 error There is likely additional logging output above.
+182 error System Windows_NT 6.3.9600
+183 error command "C:\\omneedia\\bin\\node.exe" "C:\\omneedia\\bin\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "sync"
+184 error cwd C:\omneedia\bin
+185 error node -v v1.6.4
+186 error npm -v 1.4.9
+187 error code ELIFECYCLE
+188 verbose exit [ 1, true ]

@@ -56,8 +56,7 @@ PROXY="";
 
 var shelljs=require('shelljs');
 var moment = require('moment');
-var sync = require('sync');
-var sys = require('sys');
+//var util = require('util');
 var asciimo = require('asciimo').Figlet;
 var colors = require('colors');
 var github=require('github');
@@ -1002,20 +1001,27 @@ function make_libraries()
 		var element=_require[i];
 
 		if (element!="") {
-		for (var el in PATH) {
-			if (el==element.substr(0,el.length)) {
-				var tmp=element.substr(el.length,element.length).split('.');
-				var _tmp="";
-				for (var j=0;j<tmp.length;j++) {
-					if (j>0) _tmp+="/"+tmp[j]; else _tmp=PATH[el]+tmp[j];
+			for (var el in PATH) {
+				if (el==element.substr(0,el.length)) {
+					var tmp=element.substr(el.length,element.length).split('.');
+					var _tmp="";
+					for (var j=0;j<tmp.length;j++) {
+						if (j>0) _tmp+="/"+tmp[j]; else _tmp=PATH[el]+tmp[j];
+					};
+					_require[i]=_tmp+".js";
 				};
-				_require[i]=_tmp+".js";
-				//console.log(_require[i]);
+				if (el==element.substr(1,el.length)) {
+					var tmp=element.substr(el.length+1,element.length).split('.');
+					var _tmp="";
+					for (var j=0;j<tmp.length;j++) {
+						if (j>0) _tmp+="/"+tmp[j]; else _tmp=PATH[el]+tmp[j];
+					};
+					_require[i]=_tmp+".js";				
+				};
 			}
-		}
 		} else _require.splice(i);
 	};
-
+	
 	var require=[];
 	for (var i=0;i<_require.length;i++) {
 		if (!fs.existsSync(_require[i])) {
@@ -1880,6 +1886,7 @@ function build_production()
 				};
 				console.log('  - Publishing drone v'+p[p.length-1].split(require('path').sep)[0]);
 				if (ocfg.current["publish.port"]) var port=ocfg.current["publish.port"]; else var port=9191;
+				
 				var req = request.post("http://"+ocfg.current["publish.host"]+":"+port+"/upload", function (err, resp, body) {
 					 console.log(err);
 					 console.log(resp);
@@ -2469,7 +2476,7 @@ function App_Update(nn,cb)
 asciimo.write(" omneedia", "Colossal", function(art){
 
 		console.log('\n        Omneedia Builder v'+$_VERSION);
-		sys.puts(art.cyan);
+		console.log(art.cyan);
 		
 		if (argv.length<=2) {
 			console.log('    Usage: omneedia command [options]'.yellow);
@@ -2707,7 +2714,9 @@ asciimo.write(" omneedia", "Colossal", function(art){
 	
 	if (argv.indexOf('clean')>-1)
 	{
-		glob.rmdirSyncRecursive(PROJECT_HOME+path.sep+'dev');
+		if (require('fs').existsSync(PROJECT_HOME+path.sep+'bin')) glob.rmdirSyncRecursive(PROJECT_HOME+path.sep+'bin');
+		if (require('fs').existsSync(PROJECT_HOME+path.sep+'dev')) glob.rmdirSyncRecursive(PROJECT_HOME+path.sep+'dev');
+		if (require('fs').existsSync(PROJECT_HOME+path.sep+'builds')) glob.rmdirSyncRecursive(PROJECT_HOME+path.sep+'builds');
 		console.log('    Clean.');
 	}
 
@@ -2798,10 +2807,10 @@ asciimo.write(" omneedia", "Colossal", function(art){
 		};
 		console.log('  - Publishing drone v'+p[p.length-1].split(require('path').sep)[0]);
 		if (ocfg.current["publish.port"]) var port=ocfg.current["publish.port"]; else var port=9191;
-		console.log("http://"+ocfg.current["publish.host"]+":"+port+"/upload");
 		var req = request.post("http://"+ocfg.current["publish.host"]+":"+port+"/upload", function (err, resp, body) {
 		  if (err) {
 			console.log('  ! Publishing failed. Check your config'.yellow);
+			console.log(err);
 		  } else {
 			console.log('  Done.');
 		  }

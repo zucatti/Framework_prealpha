@@ -1,4 +1,5 @@
 !.gitignore
+_gsdata_
 bin/.home
 bin/.repositories
 bin/uploads
